@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/whitewood"
+        android:textColor="#B30808"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:text="Reportar historia"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="left|bottom"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:text="Razón:"/>
+
+    <Spinner
+        android:id="@+id/sp_reason_report"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:entries="@array/report_story_reasons"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="left|bottom"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:text="Explicación:"/>
+
+    <EditText
+        android:id="@+id/et_report_details"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:maxLines="10" />
+
+
+</LinearLayout>

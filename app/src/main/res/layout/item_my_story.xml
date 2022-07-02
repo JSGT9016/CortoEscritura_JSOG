@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="5dp"
+    android:layout_height="100dp">
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100"
+        android:background="@drawable/whitewood"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_edit_story"
+            android:layout_width="0dp"
+            android:background="@color/black"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:drawableLeft="@drawable/ic_edit"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="86"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_name_story"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                tools:text="Nombre historia" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/item_board_name_layout_marginStart"
+                    android:layout_weight="40"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/tv_story_genre"
+                        android:layout_width="160dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="cursive"
+                        android:gravity="center|bottom"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        tools:text="Genero " />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="10">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="25dp"
+                            android:layout_weight="3" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="25dp"
+                            android:layout_weight="2"
+                            android:drawableLeft="@drawable/ic_baseline_comment_24"
+                            android:gravity="bottom|right"
+                            android:text="=" />
+
+                        <TextView
+                            android:id="@+id/tv_story_comments"
+                            android:layout_width="0dp"
+                            android:layout_height="25dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="5"
+                            android:text="100000" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="60"
+                    android:orientation="vertical">
+
+                    <RatingBar
+                        android:id="@+id/story_rating_stars"
+                        style="?android:attr/ratingBarStyle"
+                        android:layout_width="251dp"
+                        android:layout_height="40dp"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:scaleX="0.45"
+                        android:scaleY="0.45"
+                        android:stepSize="0.05"
+                        android:theme="@style/MiniRatingBar" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:layout_width="5dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:gravity="center|right"
+                            android:text="Calificadores : " />
+
+                        <TextView
+                            android:id="@+id/tv_amount_rating"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="50"
+                            android:text="100000" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_delete_story"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:layout_weight="7"
+            android:drawableLeft="@drawable/ic_delete"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

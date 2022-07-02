@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "63639373010",
+    "firebase_url": "https://cortoescritura-default-rtdb.firebaseio.com",
+    "project_id": "cortoescritura",
+    "storage_bucket": "cortoescritura.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:63639373010:android:140a1932518ead52f6190b",
+        "android_client_info": {
+          "package_name": "com.example.cortoescritura"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "63639373010-25542lcg2dk2pd685s0pq12mld7d8tqd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAB1V7j6yy0klHjYduJcbMDpp1FNWNyzk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "63639373010-25542lcg2dk2pd685s0pq12mld7d8tqd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

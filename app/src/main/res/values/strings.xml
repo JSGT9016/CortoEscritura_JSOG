@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">CortoEscritura</string>
+    <string name="please_wait">Por favor, espera</string>
+    <string name="intro">¿Qué esperas para compartir tus historias?, crea una cuenta, y si tienes una, inicia sesion y comienza a componer historias!</string>
+    <string name="password">Contraseña</string>
+    <string name="sign_up_string">Registrate</string>
+    <string name="email_string">Correo Electronico</string>
+    <string name="description_string">Este es un espacio para compartir historias cortas, donde muchos podran comentar y apreciar tu escritura...¿Que esperas?, ¡Registrate!</string>
+    <string name="sign_in_here_string">Registrate aqui</string>
+    <string name="name">Nombre</string>
+    <string name="sign_up_here_string">¡Registrate!</string>
+    <string name="sign_in">Iniciar Sesion</string>
+    <string name="sign_in_description">Inicia sesion y comienza a componer historias</string>
+    <string name="sign_in_string">Iniciar Sesion</string>
+    <string name="confirm_password_string">Confirmar contraseña</string>
+    <string name="nav_my_profile">Mi perfil</string>
+    <string name="nav_sign_out">Cerrar sesion</string>
+    <string name="no_stories_available">No hay historias aun creadas...</string>
+    <string name="update">Actualizar</string>
+    <string name="mobile">Celular</string>
+    <string name="Email">E-Mail</string>
+    <string name="my_profile_title">Mi perfil</string>
+    <string name="main_menu">Menu Principal</string>
+    <string name="creator">Crear Historias</string>
+    <string name="reader">Descubrir Historias</string>
+    <string name="my_stories_menu">Mis Historias</string>
+    <string name="nav_edit_my_profile">Editar mi perfil</string>
+    <string name="name_story">Nombre historia</string>
+    <string name="create_story">Crear Historia</string>
+    <string name="hint_story_creation">Escribe aqui tu historia. (Maximo 5000 caracteres)</string>
+    <string name="new_story">Nueva Historia</string>
+    <string name="hint_create_story_spinner">Selecciona genero historia</string>
+    <string name="my_stories_profile_title">Mis historias</string>
+    <string name="edit_story">"Editar: "</string>
+    <string name="discover_toolbar_title">Opciones Busqueda</string>
+    <string name="no_other_stories_found">No hay historias aun...</string>
+
+    <string-array name="story_genres">
+        <item>Selecciona genero historia</item>
+        <item>Cuento de Hadas</item>
+        <item>Drama</item>
+        <item>Erotica</item>
+        <item>Fabula</item>
+        <item>Fantasia</item>
+        <item>Ficcion</item>
+        <item>Horror/CreepyPasta</item>
+        <item>Humor</item>
+        <item>Infantil</item>
+        <item>Leyenda</item>
+        <item>Leyenda Urbana</item>
+        <item>Misterio</item>
+        <item>Poesia</item>
+        <item>Real/Personal</item>
+        <item>Romance</item>
+    </string-array>
+
+    <string-array name="themes">
+        <item>Normal</item>
+        <item>Dark</item>
+    </string-array>
+
+    <string-array name="size_font">
+            <item>16</item>
+            <item>18</item>
+            <item>20</item>
+            <item>22</item>
+            <item>24</item>
+            <item>26</item>
+            <item>28</item>
+    </string-array>
+
+    <string-array name="report_story_reasons">
+        <item>Selecciona una:</item>
+        <item>Genero Incorrecto</item>
+        <item>Lenguaje Obseno</item>
+        <item>Racismo</item>
+        <item>Promotor de odio</item>
+        <item>Bulling</item>
+        <item>Promotor de violencia</item>
+        <item>Otro</item>
+    </string-array>
+</resources>

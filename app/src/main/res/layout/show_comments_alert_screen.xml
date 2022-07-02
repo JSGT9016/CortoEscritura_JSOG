@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:weightSum="100"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_no_comments"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="80"
+        android:visibility="visible"
+        android:gravity="center"
+        android:text="Aun no hay comentarios, se el primero!"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lv_list_comments"
+        tools:listitem="@layout/item_comment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        android:visibility="gone" />
+
+
+    <EditText
+        android:id="@+id/et_comment_story_o"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:maxLines="3"
+        android:hint="\n\nComenta esta historia"/>
+
+
+</LinearLayout>

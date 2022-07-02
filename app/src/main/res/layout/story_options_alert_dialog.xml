@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:weightSum="90"
+    android:layout_width="350dp"
+    android:layout_height="300dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_weight="20"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Opciones Lectura"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="100"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:layout_weight="25">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text="Tema : "
+            android:layout_weight="40"/>
+
+        <Spinner
+            android:id="@+id/sp_theme_reading"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="60"
+            android:entries="@array/themes"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:weightSum="100"
+        android:orientation="vertical"
+        android:layout_weight="25">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text="Tamaño Letra lectura: "
+            android:layout_weight="40"/>
+
+        <Spinner
+            android:id="@+id/sp_size_text_reading"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="60"
+            android:entries="@array/size_font"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:layout_weight="25">
+
+
+       <TextView
+           android:id="@+id/tv_sample"
+           android:layout_gravity="center"
+           android:gravity="center"
+           android:text="La idea es que aqui veas como vas a leer la historia..."
+           android:textColor="@color/black"
+           android:textSize="16sp"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

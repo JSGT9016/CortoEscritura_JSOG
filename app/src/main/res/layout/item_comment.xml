@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/members_content_padding">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_member_image"
+            android:layout_width="@dimen/item_member_member_image_size"
+            android:layout_height="@dimen/item_member_member_image_size"
+            android:contentDescription="imagen"
+            android:src="@drawable/ic_user_place_holder"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="@dimen/item_member_image_circular_width_size"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/item_member_detail_layout_marginStart"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_member_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/item_member_name_text_size"
+                android:text="Nombre comentador"/>
+
+            <TextView
+                android:id="@+id/tv_member_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="@dimen/item_member_comment_text_size"
+                android:text="comentario"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_member_divider_height"
+        android:layout_marginTop="@dimen/item_member_divider_marginTop"
+        android:background="#959494"/>
+
+</LinearLayout>

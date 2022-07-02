@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/wood_background"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".activities.MainMenuActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_main_menu_activity"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/gradient_background"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.ActionBar"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/creator"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="50">
+
+        <android.widget.Button
+            android:id="@+id/create_story_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/custom_button_writer"
+            android:checkable="false"
+            android:clickable="false"
+            android:enabled="false"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_alignStart="@+id/button2"
+                android:layout_alignTop="@+id/button2"
+                android:layout_alignEnd="@+id/button2"
+                android:layout_alignBottom="@+id/button2"
+                android:layout_marginStart="125dp"
+                android:layout_marginTop="125dp"
+                android:layout_marginEnd="125dp"
+                android:layout_marginBottom="120dp"
+                android:background="@drawable/button3"
+                android:elevation="5dp"
+                android:gravity="center"
+                android:text="@string/creator"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/reader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="50"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:clickable="false">
+
+        <android.widget.Button
+            android:id="@+id/discover_stories_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/custom_button_reader"
+            android:checkable="false"
+            android:clickable="false"
+            android:enabled="false"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_alignStart="@+id/button"
+                android:layout_alignTop="@+id/button"
+                android:layout_alignEnd="@+id/button"
+                android:layout_alignBottom="@+id/button"
+                android:layout_marginStart="125dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginEnd="125dp"
+                android:layout_marginBottom="125dp"
+                android:background="@drawable/button3"
+                android:elevation="5dp"
+                android:gravity="center"
+                android:text="@string/reader"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
